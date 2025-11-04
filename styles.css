@@ -7,31 +7,24 @@ body {
 }
 
 .container {
-    max-width: 800px; /* Made wider for more content */
+    max-width: 600px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px; /* More padding for a bigger feel */
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
     color: #d63384; /* Romantic red-pink */
-    font-size: 2.5em; /* Bigger title */
-}
-
-h2 {
-    color: #d63384;
-    margin-top: 40px;
 }
 
 button {
-    padding: 15px 30px; /* Bigger buttons */
-    margin: 15px;
+    padding: 10px 20px;
+    margin: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2em;
 }
 
 #yesBtn {
@@ -42,26 +35,12 @@ button {
 #noBtn {
     background: #dc3545;
     color: white;
-    padding: 20px 40px; /* Even bigger "No" button */
 }
 
 #response {
     margin-top: 20px;
-    font-size: 1.5em; /* Bigger response text */
-}
-
-/* New styles for gallery */
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.gallery img {
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+}    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 /* New styles for timeline */
