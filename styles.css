@@ -40,4 +40,10 @@ button {
 #response {
     margin-top: 20px;
     font-size: 1.2em;
+    animation: fadeIn 1s ease-in; /* Simple fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
