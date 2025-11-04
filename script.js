@@ -1,12 +1,12 @@
 // Add confetti library (include this in your HTML head: <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>)
 
 document.getElementById('yesBtn').addEventListener('click', function() {
-    document.getElementById('response').innerHTML = "Yay! I can't wait to celebrate with you! ❤️";
+    document.getElementById('response').innerHTML = "Yay, Rumana! I can't wait to make memories with you! ❤️";
     confetti(); // Triggers confetti animation
 });
 
 document.getElementById('noBtn').addEventListener('click', function() {
-    document.getElementById('response').innerHTML = "That's okay, I still think you're amazing. Let's stay friends? 😊";
+    document.getElementById('response').innerHTML = "Aww, please think again, Rumana? 🧸😢 The teddy is sad!";
 });
 
 // Playful effect: Make "No" button move on hover
