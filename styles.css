@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffe6e6); /* Soft pink gradient */
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #d63384; /* Romantic red-pink */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: #28a745;
+    color: white;
+}
+
+#noBtn {
+    background: #dc3545;
+    color: white;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
