@@ -40,21 +40,4 @@ button {
 #response {
     margin-top: 20px;
     font-size: 1.2em;
-}    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-/* New styles for timeline */
-.timeline {
-    text-align: left;
-    max-width: 600px;
-    margin: 20px auto;
-    list-style: none;
-    padding: 0;
-}
-
-.timeline li {
-    background: #ffe6e6;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
 }
