@@ -40,22 +40,14 @@ button {
 #response {
     margin-top: 20px;
     font-size: 1.2em;
-    animation: fadeIn 1s ease-in; /* Simple fade-in animation for messages */
+    animation: fadeIn 1s ease-in; /* Fade-in for messages */
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}    color: white;
 }
 
-#response {
-    margin-top: 20px;
-    font-size: 1.2em;
-    animation: fadeIn 1s ease-in; /* Simple fade-in animation */
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+#teddy img {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
