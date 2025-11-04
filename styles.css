@@ -48,6 +48,6 @@ button {
     to { opacity: 1; }
 }
 
-#teddy img {
+#cryingTeddy img, #dancingTeddy img {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
