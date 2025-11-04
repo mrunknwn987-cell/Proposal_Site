@@ -1,5 +1,3 @@
-// Add confetti library (include this in your HTML head: <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>)
-
 let noClickCount = 0; // Track total taps
 const messages = [
     "Aww, Rumana, please think again? My heart is yours—let's give us a chance! 🧸😘", // Tap 1
@@ -13,19 +11,19 @@ const messages = [
     "One last chance, Rumana: Be my girlfriend? 🎈💖", // Tap 7
     "Rumana, I love you so much. Think again? 🧸😍", // Tap 8
     "This is it, Rumana—yes or no? But I hope yes! 🌟😘", // Tap 9
-    "Okay, Rumana, I respect your choice. But look at this sad teddy... Please think again someday? 😢🧸❤️" // After Phase 3, back to "No", show teddy
+    "Okay, Rumana, I respect your choice. But look at this sad teddy... Please think again someday? 😢🧸❤️" // After Phase 3, back to "No", show crying teddy
 ];
 
 document.getElementById('yesBtn').addEventListener('click', function() {
     if (noClickCount >= 3) {
-        document.getElementById('response').innerHTML = "Even after all that, yes? Rumana, you're incredible! I love you forever! ❤️ Confetti explosion!";
-        confetti();
+        document.getElementById('response').innerHTML = "Even after all that, yes? Rumana, you're incredible! I love you forever! ❤️";
+        document.getElementById('dancingTeddy').style.display = 'block'; // Show dancing teddy GIF
     } else {
-        document.getElementById('response').innerHTML = "Yes! Rumana, you've made my dreams come true. I love you! ❤️ Confetti time!";
-        confetti();
+        document.getElementById('response').innerHTML = "Yes! Rumana, you've made my dreams come true. I love you! ❤️";
+        document.getElementById('dancingTeddy').style.display = 'block'; // Show dancing teddy GIF
     }
     noClickCount = 0; // Reset
-    document.getElementById('teddy').style.display = 'none'; // Hide teddy on yes
+    document.getElementById('cryingTeddy').style.display = 'none'; // Hide crying teddy
 });
 
 document.getElementById('noBtn').addEventListener('click', function() {
@@ -38,8 +36,24 @@ document.getElementById('noBtn').addEventListener('click', function() {
         this.textContent = "Please?"; // After Phase 2
     } else if (noClickCount == 11) {
         this.textContent = "No"; // After Phase 3
-        document.getElementById('teddy').style.display = 'block'; // Show crying teddy GIF
-        noClickCount = 0; // Reset for looping if needed
+        document.getElementById('cryingTeddy').style.display = 'block'; // Show crying teddy GIF
+        noClickCount = 0; // Reset
     }
+    document.getElementById('dancingTeddy').style.display = 'none'; // Hide dancing teddy on no
 });
-// No moving effect at all - removed for fix
+
+// Moving "No" button on hover
+document.getElementById('noBtn').addEventListener('mouseover', function() {
+    const btn = this;
+    const container = document.querySelector('.container');
+    const containerRect = container.getBoundingClientRect();
+    const btnRect = btn.getBoundingClientRect();
+    
+    // Random position within the container
+    const newLeft = Math.random() * (containerRect.width - btnRect.width);
+    const newTop = Math.random() * (containerRect.height - btnRect.height);
+    
+    btn.style.position = 'absolute';
+    btn.style.left = newLeft + 'px';
+    btn.style.top = newTop + 'px';
+});
